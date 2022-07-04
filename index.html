@@ -13,6 +13,7 @@
     />
 
     <title>Frontend Mentor | Clipboard landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -26,19 +27,22 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
-  </head>
   <body>
     <header>
-      <img src="./images/bg-header-desktop.png" alt="" />
+     <!-- <img src="./images/bg-header-mobile.png" sizes="" alt=""> -->
+  
       <div class="header-content">
         <div class="logo">
           <img src="./images/logo.svg" alt="logo C" />
         </div>
-        <h1>A history of everything you copy</h1>
-        <p>
-          Clipboard allows you to track and organize everything you
-          copy.Instantly access your clipboard on all your devices.
-        </p>
+        <article>
+          <h1>A history of everything you copy</h1>
+          <p>
+            Clipboard allows you to track and organize everything you
+            copy.Instantly access your clipboard on all your devices.
+          </p>
+        </article>
+        
         <div class="btnGroup">
           <button>Download for iOS</button>
           <button>Download for Mac</button>
@@ -48,8 +52,8 @@
     <main>
       <div class="main-content">
         <section class="keep-track">
-          <article>
-            <h1>Keep track of your snippets</h1>
+          <article class="">
+            <h1 class="">Keep track of your snippets</h1>
             <p>
               Clipboard instantly stores any item you copy in the cloud, meaning
               you can access your snippets immediately on all your devices. Our
@@ -96,7 +100,7 @@
           </div>
         </section>
         <section class="access-clipboard">
-          <article>
+          <article class="head">
             <h1>Access Clipboard anywhere</h1>
             <p>
               Whether you’re on the go, or at your computer, you can access all
@@ -110,7 +114,7 @@
               </figure>
             </div>
             <div class="access-clicks">
-              <article>
+              <article class="head">
                 <h1>Supercharge your workflow</h1>
                 <p>We’ve got the tools to boost your productivity.</p>
               </article>
@@ -187,7 +191,7 @@
           </div>
         </section>
         <section class="clipboard-for">
-          <article>
+          <article class="head">
             <h1>Clipboard for iOS and Mac OS</h1>
             <p>
               Available for free on the App Store.Download for Mac or iOS, sync
@@ -217,21 +221,14 @@
         </div>
         <div class="col">
           <ul>
-            <li>
-              <a href="#"
-                ><img src="/images/icon-facebook.svg" alt="icon facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="/images/icon-instagram.svg" alt="icon instagram"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="/images/icon-twitter.svg" alt="icon instagram"
-              /></a>
-            </li>
+           <li>
+             <a href="#"><i class="fab fa-facebook-square"></i></a>
+           </li>
+           <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li><li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
           </ul>
         </div>
       </div>

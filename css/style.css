@@ -1,3 +1,4 @@
+@import url("https://fonts.google.com/specimen/Bai+Jamjuree");
 :root {
   /* ## Colors */
 
@@ -9,6 +10,7 @@
   /* ### Neutral */
 
   --Dark-Grayish-Blue: hsl(210, 10%, 30%);
+  /* --font-family: "Bai Jamjuree",; */
   --Grayish-Blue: hsl(201, 11%, 66%);
   --footer: hsl(201, 11%, 95%);
 
@@ -30,8 +32,10 @@
   box-sizing: border-box;
   list-style: none;
 }
+/* todo KEEP LEARNING !!!! */
 body {
   font-size: var(--Font-size);
+  font-family: "Bai Jamjuree", sans-serif;
 }
 h1 {
   color: var(--Dark-Grayish-Blue);
@@ -44,38 +48,49 @@ p {
 }
 header {
   width: 100%;
-  position: relative;
+  /* position: relative; */
   display: flex;
+  background: url("../images/bg-header-desktop.png") center center/cover;
   justify-content: center;
+  /* border: 1px solid black; */
   align-items: center;
 }
 img {
   width: 100%;
 }
 .header-content {
-  max-width: 550px;
   /* border: 1px solid black; */
-  position: absolute;
-  top: 20%;
+
+  max-width: 600px;
+  width: 100%;
+  margin-top: 7em;
+  /* position: absolute; */
+  /* top: 20%; */
   text-align: center;
 }
-.header-content h1 {
+.header-content article {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+
+.header-content article h1 {
   color: var(--Dark-Grayish-Blue);
   padding-top: 30px;
+  font-size: 2.3em;
 }
-.header-content p {
+.header-content article p {
   padding: 20px 0;
   color: var(--Grayish-Blue);
 }
 .logo img {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: 15%;
 }
 .btnGroup {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .btnGroup button {
-  padding: 14px 24px;
+  padding: 14px 45px;
   border: none;
   outline: none;
   border-radius: 20px;
@@ -85,6 +100,9 @@ img {
   font-weight: 600;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   margin: 0 10px;
+}
+.btnGroup button:hover {
+  opacity: 0.7;
 }
 .btnGroup button:first-child {
   background-color: var(--Strong-Cyan);
@@ -124,19 +142,21 @@ main {
 }
 .keep-check {
   text-align: left;
-  max-width: 400px;
+  max-width: 300px;
   align-self: flex-start;
   /* border: 1px solid black; */
+  /* background: red; */
+}
+.keep-check ul li article h1 {
+  font-size: 1.1em;
 }
 .keep-track img {
-  width: 100%;
+  /* max-width: 800px; */
+  width: 80%;
 }
-.keep-track h1 {
-  font-size: 1.5rem;
-  padding: 10px 0;
-}
+
 .keep-track ul li {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 .access-clipboard {
   margin-top: 6rem;
@@ -184,10 +204,10 @@ main {
   justify-content: space-around;
   padding: 10px;
 }
-.clipboard-for {
+
+.clipboard-for article {
   max-width: 600px;
-  /* border: 1px solid black; */
-  margin: 10px auto;
+  margin: 20px auto;
 }
 .clipboard-for h1 {
   font-size: 2rem;
@@ -225,22 +245,138 @@ footer {
   color: var(--Dark-Grayish-Blue);
   font-weight: 400;
 }
+
 .footer-content .col:last-child {
   max-width: 150px;
+
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
   width: 100%;
   /* border: 1px solid black; */
+  margin-right: 80px;
 }
 .footer-content .col:last-child ul {
   display: flex;
   width: 100%;
   align-items: center;
+  /* margin-right: 150px; */
+  /* border: 1px solid black; */
   justify-content: space-between;
 }
-/* todo Mobile screen */
-
-@media (max-width: 550px) {
+.footer-content .col:last-child ul li a {
+  font-size: 1.4em;
 }
-/* ! Hi, -_-_-_- */
+.footer-content .col:first-child ul li a:hover {
+  color: var(--Strong-Cyan);
+}
+.footer-content .col:last-child ul li a:hover {
+  color: var(--Strong-Cyan);
+}
+/* todo Never Give Up */
+
+@media screen and (max-width: 750px) {
+  header {
+    background: url("../images/bg-header-mobile.png") center center/cover;
+  }
+  .header-content article {
+    max-width: 380px;
+    /* width: 100%; */
+  }
+  .header-content article h1 {
+    font-size: 2em;
+  }
+  .logo img {
+    width: 30%;
+  }
+  .btnGroup {
+    /* border: 1px solid black;s */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80%; */
+    margin: 10px auto;
+  }
+  .btnGroup button {
+    margin: 10px 0;
+    width: 70%;
+    padding: 18px 0;
+  }
+  .access-clicks .tools {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .access-clicks .tools li {
+    margin: 35px 0;
+  }
+  .access-clicks .tools img {
+    width: 10%;
+  }
+  .access-clicks .brands {
+    flex-direction: column;
+  }
+  .access-clicks .brands li {
+    margin: 40px 0;
+  }
+  .access-clicks .brands img {
+    width: 30%;
+  }
+  .keep-track-content {
+    flex-direction: column;
+  }
+  .keep-check {
+    margin: 80px auto;
+    text-align: center;
+  }
+
+  .keep-img img {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content .col:first-child img {
+    width: 18%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .footer-content .col:first-child {
+    flex-direction: column;
+    /* justify-content: center; */
+    /* background: red; */
+    max-width: 100%;
+    text-align: center;
+    /* align-items: center; */
+  }
+  .footer-content .col:last-child {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .footer-content .col:first-child ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-content .col:last-child ul {
+    /* flex-direction: column; */
+    margin-top: 30px;
+  }
+  .keep-check ul li article h1 {
+    font-size: 1.3em;
+  }
+  .keep-track article h1 {
+    font-size: 1.6em;
+  }
+  .head h1 {
+    font-size: 1.6em;
+  }
+}
+/* ! Hi, -_-_-_-  */
+@media (min-width: 1050px) {
+  .keep-check {
+    max-width: 400px;
+  }
+}
